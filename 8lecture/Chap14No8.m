@@ -1,0 +1,11 @@
+x =[0.1 0.2 0.4 0.6 0.9 1.3 1.5 1.7 1.8];
+y =[0.75 1.25 1.45 1.25 0.85 0.55 0.35 0.28 0.18];
+yn = log(y./x);
+xn = x;
+[a r2] = linregr(xn, yn);
+m = a(1);
+b = a(2);
+alfa = exp(b);
+beta = m;
+display(alfa);
+display(beta);
